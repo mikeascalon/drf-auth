@@ -7,7 +7,7 @@ Author:
 
 Use Django REST Framework to create an API, then “containerize” it with Docker.
 
-PORT - [Port Number](http://0.0.0.0:8000/api/v1/coffees/)
+PORT - [Port Number](http://127.:8000/api/v1/coffees/)
 
 ### Running the Application
 
@@ -21,8 +21,8 @@ docker-compose up --build
 
 Access the list of coffees or create a new coffee entry:
 
-GET and POST requests to http://0.0.0.0:8000/api/v1/coffees/
+GET and POST requests to http://127.0.0.1:8000/api/v1/coffees/
 
 Retrieve, update, or delete a specific coffee entry:
 
-GET, PUT, PATCH, and DELETE requests to http://0.0.0.0:8000/api/v1/coffees/
+GET, PUT, PATCH, and DELETE requests to http://127.0.0.1:8000/api/v1/coffees/
