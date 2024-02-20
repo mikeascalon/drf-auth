@@ -1,19 +1,28 @@
-LAB - Class xx
-Project: Project Name Here
-Author: Student/Group Name
-Links and Resources
-back-end server url (when applicable)
-front-end application (when applicable)
-Setup
-.env requirements (where applicable)
-i.e.
+# LAB - Class 31
 
-PORT - Port Number
-DATABASE_URL - URL to the running Postgres instance/db
-How to initialize/run your application (where applicable)
-e.g. python main.py
-How to use your library (where applicable)
-Tests
-How do you run tests?
-Any tests of note?
-Describe any tests that you did not complete, skipped, etc
+Project: Django REST Framework & Docker
+Author: 
+
+## Overview
+
+Use Django REST Framework to create an API, then “containerize” it with Docker.
+
+PORT - [Port Number](http://0.0.0.0:8000/api/v1/coffees/)
+
+### Running the Application
+
+1. **Docker**: To run the application using Docker, ensure Docker is installed on your machine. Then execute:
+
+```bash
+docker-compose up --build
+```
+
+#### How to Use the API
+
+Access the list of coffees or create a new coffee entry:
+
+GET and POST requests to http://0.0.0.0:8000/api/v1/coffees/
+
+Retrieve, update, or delete a specific coffee entry:
+
+GET, PUT, PATCH, and DELETE requests to http://0.0.0.0:8000/api/v1/coffees/
