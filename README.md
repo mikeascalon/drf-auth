@@ -1,13 +1,15 @@
-# LAB - Class 31
+# LAB - Class 32
 
-Project: Django REST Framework & Docker
-Author: 
+Project: Permissions & Postgresql
+
+Author: Michelangelo Ascalon
 
 ## Overview
 
-Use Django REST Framework to create an API, then “containerize” it with Docker.
+Added permissions to ensure that only authenticated users have access to the API. Implement a custom permission to allow only appropriate users to update or delete entries. Added functionality to switch users directly from the browsable API, enhancing the user experience and testing capabilities. Incorporate PostgreSQL in your Docker setup. 
 
-PORT - [Port Number](http://127.:8000/api/v1/coffees/)
+
+PORT - [Port Number](http://127.0.0.1:8000/api/v1/coffees/)
 
 ### Running the Application
 

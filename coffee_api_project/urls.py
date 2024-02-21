@@ -19,5 +19,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("api/v1/coffees/", include("coffees.urls"))
+    path("api/v1/coffees/", include("coffees.urls")),
+     path('api-auth/', include('rest_framework.urls')),  # Adds login to the browsable API
 ]

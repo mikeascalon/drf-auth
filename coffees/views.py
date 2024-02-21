@@ -1,6 +1,8 @@
 from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView
 from .models import Coffee
 from .serializers import CoffeeSerializer
+from .permissions import IsOwnerOrReadOnly
+
 
 class CoffeeList(ListCreateAPIView):
     # Anything that inherits from ListAPI View is going to need 2 things.
@@ -14,3 +16,4 @@ class CoffeeList(ListCreateAPIView):
 class CoffeeDetail(RetrieveUpdateDestroyAPIView):
     queryset = Coffee.objects.all()
     serializer_class = CoffeeSerializer
+    permission_classes = (IsOwnerOrReadOnly,)
